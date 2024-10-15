@@ -50,15 +50,41 @@ Open the app:
 Open http://localhost:3000 in your browser to view the app.
 Folder Structure
 
+## Folder Structure
+
+```bash
 src/
 │
 ├── admin/            # Admin-specific components (Stock, User Management, etc.)
+│   ├── Dashboard.js  # Admin dashboard component
+│   ├── Orders.js     # Admin order management component
+│   └── Users.js      # User management component
+│
 ├── sales/            # Sales-specific components (Order Management, CRM, etc.)
+│   ├── Dashboard.js  # Sales dashboard component
+│   ├── Orders.js     # Sales order management component
+│   └── Customers.js  # Customer relationship management component
+│
 ├── common/           # Shared components used by both Admin and Sales
+│   ├── Header.js     # Shared header/navigation bar
+│   ├── Footer.js     # Shared footer component
+│   └── Sidebar.js    # Shared sidebar navigation component
+│
 ├── services/         # API services and data handling
+│   ├── api.js        # API request functions (axios)
+│   └── auth.js       # Authentication-related services
+│
 ├── utils/            # Utility functions (formatting, validation, etc.)
-└── assets/           # Static assets (images, fonts, etc.)
-Deployment
+│   └── helpers.js    # General helper functions
+│
+├── assets/           # Static assets (images, fonts, etc.)
+│   └── logo.png      # Application logo
+│
+└── index.js          # Main entry point of the app
+```
+
+
+## Deployment
 To deploy the app:
 
 Build the app for production:
